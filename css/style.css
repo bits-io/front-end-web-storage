@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Signika Negative', 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7895B2;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline-color: #c3c3c3;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #7895B2;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > .col-6 {
+    justify-content: space-around;
+    display: inline-block;
+    width: 49%;
+}
+
+.input_section > form > button {
+    background-color: #7895B2;
+    color: white;
+    border: 0;
+    border-radius: 100px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border-radius: 30px;
+    border-color:  #d7d7d7;
+    background-color: #e4e4e4;
+    outline-color: #c3c3c3;
+}
+
+
+.input_section > form > .input > label {
+    color: #7895B2;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #7895B2;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline-color: #c3c3c3;
+}
+
+.search_section > h2 {
+    color: #7895B2;
+}
+
+.search_section > form {
+    padding: 16px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > input {
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-color:  #d7d7d7;
+    width: 400px;
+    display: block;
+    background-color: #e4e4e4;
+    outline-color: #c3c3c3;
+}
+
+.search_section > form > button {
+    background-color: #7895B2;
+    color: white;
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 25px;
+    outline-color: #c3c3c3;
+}
+
+.book_shelf > h2 {
+    color: #7895B2;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #9b9b9b;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 50px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #367E18;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #D2001A;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .search_section > form > input {
+        padding: 5px 10px;
+        border-radius: 30px;
+        border-color:  #d7d7d7;
+        width: 200px;
+        display: block;
+        background-color: #e4e4e4;
+        outline-color: #c3c3c3;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .search_section > form > input {
+        padding: 5px 10px;
+        border-radius: 30px;
+        border-color:  #d7d7d7;
+        width: 300px;
+        display: block;
+        background-color: #e4e4e4;
+        outline-color: #c3c3c3;
+    }
+}
